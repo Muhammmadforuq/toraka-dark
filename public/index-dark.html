@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Toraka</title>
+</head>
+
+<body class="dark:bg-[#111111] dark:text-white">
+  <header class="relative bg-brand-blue">
+    <nav class="max-w-[1400px] mx-auto flex justify-between items-center text-white px-5">
+      <div class="flex items-center space-x-10">
+        <a href="#" class="my-4">
+          <img src="./image/logo.svg" alt="">
+        </a>
+        <!-- Desktop menu -->
+        <div class="hidden md:flex items-center font-medium text-xs space-x-10">
+          <a href="#" class="flex items-center border-b-4 border-white space-x-1 py-5">
+            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.7151 14.3188H6.90467V9.43763C6.90467 9.26532 6.95759 9.1287 7.06344 9.02778C7.16928 8.92685 7.3059 8.87639 7.47329 8.87639H10.1539C10.3262 8.87639 10.4628 8.92685 10.5638 9.02778C10.6647 9.1287 10.7151 9.26532 10.7151 9.43763V14.3188ZM2.30402 13.8758C2.30402 14.3927 2.45048 14.794 2.74341 15.0795C3.03633 15.365 3.44372 15.5078 3.96557 15.5078H13.6764C14.1933 15.5078 14.5983 15.365 14.8912 15.0795C15.1841 14.794 15.3305 14.3927 15.3305 13.8758V8.02711L9.26038 2.9391C8.96502 2.68802 8.66962 2.68802 8.3742 2.9391L2.30402 8.02711V13.8758ZM0 7.28867C0 7.44129 0.0566157 7.57791 0.169847 7.69855C0.283079 7.81913 0.438157 7.87943 0.635082 7.87943C0.738466 7.87943 0.833236 7.85483 0.919391 7.80562C1.00555 7.75637 1.08801 7.7022 1.16678 7.64312L8.55887 1.44001C8.64255 1.36616 8.72992 1.32924 8.82096 1.32924C8.91206 1.32924 8.99945 1.36616 9.08313 1.44001L16.4752 7.64312C16.549 7.7022 16.6291 7.75637 16.7152 7.80562C16.8014 7.85483 16.8961 7.87943 16.9995 7.87943C17.1718 7.87943 17.3195 7.82896 17.4426 7.72804C17.5656 7.62711 17.6272 7.48804 17.6272 7.31082C17.6272 7.10405 17.5509 6.93667 17.3983 6.80867L9.71084 0.347079C9.43514 0.115693 9.13851 0 8.82096 0C8.50346 0 8.20686 0.115693 7.93115 0.347079L0.236309 6.80867C0.0787698 6.93667 0 7.09667 0 7.28867ZM13.4771 3.95819L15.3305 5.52374V2.11202C15.3305 1.94955 15.2826 1.82032 15.1866 1.72432C15.0906 1.62832 14.9614 1.58032 14.7989 1.58032H14.0087C13.8512 1.58032 13.7232 1.62832 13.6247 1.72432C13.5263 1.82032 13.4771 1.94955 13.4771 2.11202V3.95819Z"
+                fill="currentColor" />
+            </svg>
+            <span>Home</span>
+          </a>
+          <a href="#"
+            class="flex items-center opacity-60 border-b-4 border-transparent lg:hover:border-white lg:hover:opacity-100 transition ease-linear space-x-1 py-5">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.66667 6V0H16V6H8.66667ZM0 8.66667V0H7.33333V8.66667H0ZM8.66667 16V7.33333H16V16H8.66667ZM0 16V10H7.33333V16H0Z"
+                fill="currentColor" />
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a href="#"
+            class="flex items-center opacity-60 border-b-4 border-transparent lg:hover:border-white lg:hover:opacity-100 transition ease-linear space-x-1 py-5">
+            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 0H2C0.894688 0 0 0.969245 0 2.16667V10.8333C0 12.0311 0.894375 13 2 13H14C15.1056 13 16 12.0311 16 10.8333V2.16667C16 0.969245 15.1062 0 14 0ZM5 10.2917H2.5C2.22281 10.2917 2 10.0513 2 9.75V9.20833C2 8.90703 2.22281 8.66667 2.5 8.66667H5V10.2917ZM9 9.75C9 10.0505 8.77734 10.2917 8.5 10.2917H6V8.66667H8.5C8.77734 8.66667 9 8.90788 9 9.20833V9.75ZM14 5.41667C14 6.01318 13.5506 6.5 13 6.5H3C2.44937 6.5 2 6.0125 2 5.41667V3.25C2 2.65349 2.44937 2.16667 3 2.16667H13C13.5506 2.16667 14 2.65349 14 3.25V5.41667Z"
+                fill="currentColor" />
+            </svg>
+            <span>Discover</span>
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center space-x-6">
+        <!-- discord -->
+        <button class="hidden md:block" type="button">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.3916 2.18239C16.3865 2.1725 16.378 2.16474 16.3677 2.16052C15.1764 1.61391 13.9192 1.22414 12.6275 1.00096C12.6158 0.998774 12.6037 1.00035 12.5929 1.00545C12.5821 1.01056 12.5732 1.01894 12.5674 1.02939C12.3962 1.34011 12.2408 1.65927 12.1018 1.98564C10.7095 1.77429 9.2933 1.77429 7.901 1.98564C7.76105 1.65844 7.60316 1.3392 7.42803 1.02939C7.42203 1.01916 7.41308 1.01098 7.40235 1.00591C7.39163 1.00083 7.37963 0.99911 7.36791 1.00096C6.07615 1.22367 4.81885 1.61347 3.62765 2.16055C3.61746 2.16487 3.60885 2.17225 3.60303 2.18168C1.22087 5.73912 0.568308 9.20909 0.888433 12.6361C0.889334 12.6445 0.891914 12.6526 0.896021 12.66C0.900128 12.6674 0.905678 12.6739 0.912339 12.6791C2.29945 13.7061 3.85095 14.4901 5.50062 14.9975C5.51224 15.001 5.52465 15.0008 5.53617 14.997C5.5477 14.9932 5.55779 14.986 5.56509 14.9763C5.91941 14.4942 6.23336 13.9837 6.50375 13.45C6.50746 13.4427 6.50959 13.4347 6.50997 13.4265C6.51036 13.4183 6.50901 13.4101 6.506 13.4024C6.50299 13.3948 6.49839 13.3879 6.49252 13.3821C6.48664 13.3764 6.47962 13.372 6.47191 13.3692C5.97683 13.1797 5.49754 12.9514 5.03853 12.6862C5.03019 12.6813 5.02319 12.6745 5.01814 12.6662C5.01309 12.658 5.01015 12.6486 5.00958 12.6389C5.00901 12.6293 5.01082 12.6196 5.01486 12.6109C5.0189 12.6021 5.02505 12.5944 5.03275 12.5886C5.12906 12.5164 5.22544 12.4413 5.31741 12.3655C5.32558 12.3588 5.33546 12.3545 5.34595 12.3531C5.35644 12.3517 5.36712 12.3532 5.37678 12.3575C8.38394 13.7299 11.6396 13.7299 14.6112 12.3575C14.6208 12.3529 14.6316 12.3512 14.6423 12.3525C14.6529 12.3537 14.663 12.358 14.6713 12.3648C14.7633 12.4406 14.8596 12.5164 14.9567 12.5886C14.9644 12.5943 14.9706 12.602 14.9747 12.6107C14.9788 12.6195 14.9807 12.6291 14.9802 12.6388C14.9797 12.6484 14.9768 12.6578 14.9718 12.6661C14.9669 12.6744 14.9599 12.6813 14.9516 12.6862C14.4936 12.9536 14.0139 13.1818 13.5175 13.3684C13.5098 13.3714 13.5028 13.3759 13.497 13.3817C13.4911 13.3875 13.4866 13.3945 13.4837 13.4022C13.4807 13.4099 13.4794 13.4182 13.4799 13.4264C13.4803 13.4346 13.4825 13.4427 13.4863 13.45C13.7612 13.9808 14.0747 14.4906 14.4242 14.9755C14.4313 14.9854 14.4414 14.9929 14.4529 14.9968C14.4645 15.0008 14.477 15.0009 14.4887 14.9974C16.1413 14.4917 17.6955 13.7077 19.0844 12.6791C19.0911 12.6741 19.0968 12.6678 19.1009 12.6605C19.105 12.6532 19.1075 12.6451 19.1083 12.6368C19.4915 8.67484 18.4667 5.2333 16.3916 2.18239ZM6.95284 10.5494C6.04747 10.5494 5.30147 9.71856 5.30147 8.69818C5.30147 7.6778 6.033 6.8469 6.95284 6.8469C7.87988 6.8469 8.61866 7.68502 8.60419 8.69812C8.60419 9.71856 7.87263 10.5494 6.95284 10.5494ZM13.0585 10.5494C12.1531 10.5494 11.4071 9.71856 11.4071 8.69818C11.4071 7.6778 12.1387 6.8469 13.0585 6.8469C13.9856 6.8469 14.7243 7.68502 14.7098 8.69812C14.7098 9.71856 13.9856 10.5494 13.0585 10.5494Z"
+              fill="white" fill-opacity="0.85" />
+          </svg>
+        </button>
+
+        <!-- Notifications -->
+        <button id="notifications" data-dropdown-toggle="notification-dropdown" type="button">
+          <div>
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.0004 1V1.55875C10.2661 1.91844 12.0006 3.88125 12.0006 6.25V7.29375C12.0006 8.7125 12.485 10.0906 13.3694 11.2L13.8351 11.7812C14.0163 12.0063 14.0507 12.3156 13.9257 12.575C13.8007 12.8344 13.5382 13 13.2507 13H0.750043C0.461591 13 0.198922 12.8344 0.0740406 12.575C-0.0508718 12.3156 -0.0157451 12.0063 0.164389 11.7812L0.630349 11.2C1.51696 10.0906 2.0001 8.7125 2.0001 7.29375V6.25C2.0001 3.88125 3.73457 1.91844 6.0003 1.55875V1C6.0003 0.447812 6.4472 0 7.00035 0C7.5535 0 8.0004 0.447812 8.0004 1ZM6.75034 3C4.9565 3 3.50018 4.45625 3.50018 6.25V7.29375C3.50018 8.79062 3.06641 10.25 2.2598 11.5H11.7412C10.9349 10.25 10.5005 8.79062 10.5005 7.29375V6.25C10.5005 4.45625 9.0442 3 7.25036 3H6.75034ZM9.00045 14C9.00045 14.5031 8.79107 15.0406 8.41605 15.4156C8.04103 15.7906 7.5035 16 7.00035 16C6.46908 16 5.95968 15.7906 5.58466 15.4156C5.20964 15.0406 5.00025 14.5031 5.00025 14H9.00045Z"
+                fill="white" fill-opacity="0.85" />
+            </svg>
+          </div>
+
+          <!-- Dropdown menu -->
+          <div id="notification-dropdown"
+            class="z-10 hidden bg-white dark:bg-[#121212] w-full sm:w-96 sm:rounded-md border border-gray-400 dark:border-gray-600 !top-[69px] sm:!top-0 shadow-2xl">
+            <div aria-labelledby="notifications">
+              <h2
+                class="font-bold text-sm text-start text-black dark:text-white bg-black/20 dark:bg-[#1E1E1E] sm:rounded-t-md py-5 px-7">
+                Notifications
+              </h2>
+              <div class="text-black dark:text-white text-start bg-white dark:bg-[#121212] sm:rounded-b-md px-3.5">
+                <a href="#"
+                  class="group flex items-center border-b border-black/20 dark:border-white/20 gap-3 py-3 px-2.5">
+                  <div
+                    class="w-xs h-xs flex justify-center items-center border border-black dark:border-white/20 group-hover:border-black/50 rounded-full transition p-1">
+                    <div class="w-16 h-16 rounded-full overflow-hidden">
+                      <img class="w-full h-full object-cover" src="./image/feature.png" alt="">
+                    </div>
+                  </div>
+                  <p class="font-medium text-xs opacity-40 group-hover:opacity-100 transition ease-linear">Return Of The
+                    8th Class
+                    Magician
+                    chapter 40 has been released.</p>
+                </a>
+                <a href="#"
+                  class="group flex items-center border-b border-black/20 dark:border-white/20 gap-3 py-3 px-2.5">
+                  <div
+                    class="w-xs h-xs flex justify-center items-center border border-black dark:border-white/20 group-hover:border-black/50 rounded-full transition p-1">
+                    <div class="w-16 h-16 rounded-full overflow-hidden">
+                      <img class="w-full h-full object-cover" src="./image/feature.png" alt="">
+                    </div>
+                  </div>
+                  <p class="font-medium text-xs opacity-40 group-hover:opacity-100 transition ease-linear">Return Of The
+                    8th Class
+                    Magician
+                    chapter 40 has been released.</p>
+                </a>
+                <a href="#"
+                  class="group flex items-center border-b border-black/20 dark:border-white/20 gap-3 py-3 px-2.5">
+                  <div
+                    class="w-xs h-xs flex justify-center items-center border border-black dark:border-white/20 group-hover:border-black/50 rounded-full transition p-1">
+                    <div class="w-16 h-16 rounded-full overflow-hidden">
+                      <img class="w-full h-full object-cover" src="./image/feature.png" alt="">
+                    </div>
+                  </div>
+                  <p class="font-medium text-xs opacity-40 group-hover:opacity-100 transition ease-linear">Return Of The
+                    8th Class
+                    Magician
+                    chapter 40 has been released.</p>
+                </a>
+                <p class="font-medium text-sm text-center py-6">Read All Notifications</p>
+              </div>
+            </div>
+          </div>
+        </button>
+
+        <!-- user -->
+        <button type="button" id="user" data-dropdown-toggle="user-dropdown" class="w-9 h-9">
+          <img class="w-full h-full object-cover rounded-full cursor-pointer" src="./image/user.png" alt="">
+
+          <div id="user-dropdown"
+            class="w-full sm:w-80 text-black dark:text-white hidden z-20 !top-[59px] sm:!top-0 shadow-2xl">
+            <div aria-labelledby="user" class="bg-white dark:bg-[#4A4A4A] sm:rounded-md py-3.5 px-8">
+              <div class="flex items-center space-x-4">
+                <div class="w-10 h-10 rounded-full">
+                  <img class="w-full h-full object-cover rounded-full cursor-pointer" src="./image/feature.png" alt="">
+                </div>
+                <div class="text-start">
+                  <h3 class="font-medium">Qilin</h3>
+                  <a href="mailto:qilin@alandal.com"
+                    class="text-sm opacity-60 hover:opacity-100 transition ease-linear">qilin@alandal.com</a>
+                </div>
+
+              </div>
+              <div class="text-sm border-b border-black/20 space-y-3.5 pb-6 mt-3.5">
+                <!-- Profile -->
+                <a href="#"
+                  class="flex items-center gap-2 underline decoration-transparent lg:hover:decoration-black dark:lg:hover:decoration-white transition ease-linear">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 16.5074C13.1421 16.5074 16.5 13.1496 16.5 9.00745C16.5 4.86531 13.1421 1.50745 9 1.50745C4.85786 1.50745 1.5 4.86531 1.5 9.00745C1.5 13.1496 4.85786 16.5074 9 16.5074Z"
+                      class="fill-black dark:fill-white" fill="currentColor" />
+                    <path
+                      d="M9 5.20496C7.4475 5.20496 6.1875 6.46496 6.1875 8.01746C6.1875 9.53996 7.38 10.7775 8.9625 10.8225C8.985 10.8225 9.015 10.8225 9.03 10.8225C9.045 10.8225 9.0675 10.8225 9.0825 10.8225C9.09 10.8225 9.0975 10.8225 9.0975 10.8225C10.6125 10.77 11.805 9.53996 11.8125 8.01746C11.8125 6.46496 10.5525 5.20496 9 5.20496Z"
+                      class="fill-white dark:fill-black" fill="currentColor" />
+                    <path
+                      d="M14.085 14.5201C12.75 15.7501 10.965 16.5076 9.00004 16.5076C7.03504 16.5076 5.25004 15.7501 3.91504 14.5201C4.09504 13.8376 4.58254 13.2151 5.29504 12.7351C7.34254 11.3701 10.6725 11.3701 12.705 12.7351C13.425 13.2151 13.905 13.8376 14.085 14.5201Z"
+                      class="fill-white dark:fill-black" fill="currentColor" />
+                  </svg>
+                  <span class="opacity-90">Profile</span>
+                </a>
+                <!-- Settings -->
+                <a href="#"
+                  class="flex items-center gap-2 underline decoration-transparent lg:hover:decoration-black dark:lg:hover:decoration-white transition ease-linear">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.5 9.65995V8.33995C1.5 7.55995 2.1375 6.91495 2.925 6.91495C4.2825 6.91495 4.8375 5.95495 4.155 4.77745C3.765 4.10245 3.9975 3.22495 4.68 2.83495L5.9775 2.09245C6.57 1.73995 7.335 1.94995 7.6875 2.54245L7.77 2.68495C8.445 3.86245 9.555 3.86245 10.2375 2.68495L10.32 2.54245C10.6725 1.94995 11.4375 1.73995 12.03 2.09245L13.3275 2.83495C14.01 3.22495 14.2425 4.10245 13.8525 4.77745C13.17 5.95495 13.725 6.91495 15.0825 6.91495C15.8625 6.91495 16.5075 7.55245 16.5075 8.33995V9.65995C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.65995Z"
+                      class="fill-black dark:fill-white" fill="currentColor" />
+                    <path
+                      d="M9 11.4375C10.3462 11.4375 11.4375 10.3462 11.4375 9C11.4375 7.65381 10.3462 6.5625 9 6.5625C7.65381 6.5625 6.5625 7.65381 6.5625 9C6.5625 10.3462 7.65381 11.4375 9 11.4375Z"
+                      class="fill-white dark:fill-black" fill="currentColor" />
+                  </svg>
+                  <span class="opacity-90">Settings</span>
+                </a>
+                <!-- Manage Subscription -->
+                <a href="#"
+                  class="flex items-center gap-2 underline decoration-transparent lg:hover:decoration-black dark:lg:hover:decoration-white transition ease-linear">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.468 1.41663H5.53924C2.96091 1.41663 1.42383 2.95371 1.42383 5.53204V11.4608C1.42383 14.0391 2.96091 15.5762 5.53924 15.5762H11.468C14.0463 15.5762 15.5834 14.0391 15.5834 11.4608V5.53204C15.5834 2.95371 14.0463 1.41663 11.468 1.41663Z"
+                      class="fill-black dark:fill-white" fill="currentColor" />
+                    <path
+                      d="M8.14572 5.73046V12.2188C8.14572 12.4738 7.89071 12.6438 7.65696 12.5446C6.79988 12.1763 5.6807 11.8363 4.90154 11.7371L4.76695 11.7229C4.33487 11.6663 3.98071 11.2625 3.98071 10.8234V5.3692C3.98071 4.83087 4.41988 4.42712 4.95822 4.46962C5.84363 4.54046 7.15406 4.96547 7.97572 5.43297C8.08197 5.48255 8.14572 5.60296 8.14572 5.73046Z"
+                      class="fill-white dark:fill-black" fill="currentColor" />
+                    <path
+                      d="M13.0193 5.45421V10.8163C13.0193 11.2554 12.6651 11.6592 12.233 11.7159L12.0842 11.73C11.3122 11.8363 10.2001 12.1692 9.343 12.5305C9.10925 12.6296 8.85425 12.4596 8.85425 12.2046V5.72336C8.85425 5.59586 8.918 5.47546 9.03133 5.41171C9.853 4.95129 11.1351 4.54044 12.0063 4.46252H12.0347C12.5801 4.46961 13.0193 4.90879 13.0193 5.45421Z"
+                      class="fill-white dark:fill-black" fill="currentColor" />
+                  </svg>
+                  <span class="opacity-90">Manage Subscription</span>
+                </a>
+              </div>
+              <!-- Sign out -->
+              <a class="block font-medium text-center lg:hover:opacity-50 transition ease-linear mt-5" href="#">Sign
+                out</a>
+            </div>
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="md:hidden flex items-center font-medium text-xs text-white border-t border-white/50 space-x-10 px-5">
+      <a href="#" class="flex items-center space-x-1 py-5">
+        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.7151 14.3188H6.90467V9.43763C6.90467 9.26532 6.95759 9.1287 7.06344 9.02778C7.16928 8.92685 7.3059 8.87639 7.47329 8.87639H10.1539C10.3262 8.87639 10.4628 8.92685 10.5638 9.02778C10.6647 9.1287 10.7151 9.26532 10.7151 9.43763V14.3188ZM2.30402 13.8758C2.30402 14.3927 2.45048 14.794 2.74341 15.0795C3.03633 15.365 3.44372 15.5078 3.96557 15.5078H13.6764C14.1933 15.5078 14.5983 15.365 14.8912 15.0795C15.1841 14.794 15.3305 14.3927 15.3305 13.8758V8.02711L9.26038 2.9391C8.96502 2.68802 8.66962 2.68802 8.3742 2.9391L2.30402 8.02711V13.8758ZM0 7.28867C0 7.44129 0.0566157 7.57791 0.169847 7.69855C0.283079 7.81913 0.438157 7.87943 0.635082 7.87943C0.738466 7.87943 0.833236 7.85483 0.919391 7.80562C1.00555 7.75637 1.08801 7.7022 1.16678 7.64312L8.55887 1.44001C8.64255 1.36616 8.72992 1.32924 8.82096 1.32924C8.91206 1.32924 8.99945 1.36616 9.08313 1.44001L16.4752 7.64312C16.549 7.7022 16.6291 7.75637 16.7152 7.80562C16.8014 7.85483 16.8961 7.87943 16.9995 7.87943C17.1718 7.87943 17.3195 7.82896 17.4426 7.72804C17.5656 7.62711 17.6272 7.48804 17.6272 7.31082C17.6272 7.10405 17.5509 6.93667 17.3983 6.80867L9.71084 0.347079C9.43514 0.115693 9.13851 0 8.82096 0C8.50346 0 8.20686 0.115693 7.93115 0.347079L0.236309 6.80867C0.0787698 6.93667 0 7.09667 0 7.28867ZM13.4771 3.95819L15.3305 5.52374V2.11202C15.3305 1.94955 15.2826 1.82032 15.1866 1.72432C15.0906 1.62832 14.9614 1.58032 14.7989 1.58032H14.0087C13.8512 1.58032 13.7232 1.62832 13.6247 1.72432C13.5263 1.82032 13.4771 1.94955 13.4771 2.11202V3.95819Z"
+            fill="currentColor" />
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="#" class="flex items-center opacity-60 space-x-1 py-5">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.66667 6V0H16V6H8.66667ZM0 8.66667V0H7.33333V8.66667H0ZM8.66667 16V7.33333H16V16H8.66667ZM0 16V10H7.33333V16H0Z"
+            fill="currentColor" />
+        </svg>
+        <span>Dashboard</span>
+      </a>
+      <a href="#" class="flex items-center opacity-60 space-x-1 py-5">
+        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14 0H2C0.894688 0 0 0.969245 0 2.16667V10.8333C0 12.0311 0.894375 13 2 13H14C15.1056 13 16 12.0311 16 10.8333V2.16667C16 0.969245 15.1062 0 14 0ZM5 10.2917H2.5C2.22281 10.2917 2 10.0513 2 9.75V9.20833C2 8.90703 2.22281 8.66667 2.5 8.66667H5V10.2917ZM9 9.75C9 10.0505 8.77734 10.2917 8.5 10.2917H6V8.66667H8.5C8.77734 8.66667 9 8.90788 9 9.20833V9.75ZM14 5.41667C14 6.01318 13.5506 6.5 13 6.5H3C2.44937 6.5 2 6.0125 2 5.41667V3.25C2 2.65349 2.44937 2.16667 3 2.16667H13C13.5506 2.16667 14 2.65349 14 3.25V5.41667Z"
+            fill="currentColor" />
+        </svg>
+        <span>Discover</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- hero swiper -->
+    <div class="overflow-x-hidden">
+      <div class="swiper mySwiperhero main lg:mt-14">
+        <div class="swiper-wrapper text-sm text-white py-6 md:py-10">
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+              <div class="absolute bottom-3.5 left-3.5 z-10">
+                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                  <span class="font-medium text-10">9.8</span>
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                      fill="#E5A800" />
+                  </svg>
+                </div>
+                <p class="heading">The Game That I Came From</p>
+              </div>
+              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature and New -->
+    <div class="max-w-base mx-auto lg:flex justify-between lg:gap-10 px-4 lg:px-10 my-16">
+      <div class="w-fulll lg:w-3/5 xl:w-[70%]">
+        <!-- Feature -->
+        <div>
+          <!-- feature heading -->
+          <div class="flex justify-between items-center mb-8">
+            <h2 class="font-semibold text-xl">Featured</h2>
+            <button
+              class="group flex items-center gap-1 font-medium text-sm text-white bg-brand-blue rounded-lg py-1.5 px-5">
+              <span>View More</span>
+              <svg class="group-hover:translate-x-1 transition ease-linear" width="11" height="9" viewBox="0 0 11 9"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 4.49702C11 4.34672 10.9408 4.21423 10.8223 4.09953L6.89499 0.177982C6.83178 0.1147 6.76761 0.0692154 6.70246 0.0415292C6.63732 0.0138431 6.5692 0 6.49811 0C6.35201 0 6.22958 0.0484508 6.13083 0.145352C6.03211 0.242254 5.98276 0.363875 5.98276 0.510216C5.98276 0.581407 5.9946 0.649634 6.0183 0.714897C6.04199 0.780156 6.07754 0.836517 6.12495 0.88398L7.45182 2.23664L9.80342 4.3843L9.92189 4.08766L8.01453 3.969H0.52127C0.367258 3.969 0.241877 4.01844 0.145126 4.11732C0.0483755 4.2162 0 4.34277 0 4.49702C0 4.65127 0.0483755 4.77783 0.145126 4.87671C0.241877 4.97559 0.367258 5.02503 0.52127 5.02503H8.01453L9.92189 4.90638L9.80342 4.61568L7.45182 6.75737L6.12495 8.11005C6.07754 8.15752 6.04199 8.21388 6.0183 8.27913C5.9946 8.34441 5.98276 8.41264 5.98276 8.4838C5.98276 8.63017 6.03211 8.75179 6.13083 8.84867C6.22958 8.94559 6.35201 8.99405 6.49811 8.99405C6.64029 8.99405 6.76864 8.93866 6.88316 8.82789L10.8223 4.89451C10.9408 4.77981 11 4.64732 11 4.49702Z"
+                  fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+          <div class="relative">
+            <div class="swiper mySwiperfeature">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- navigation -->
+            <div class="absolute top-1/2 -translate-y-1/2 -left-8 -right-8 hidden lg:flex items-center justify-between">
+              <button
+                class="swiper-button-prevfeature w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.765 8.8416C5.62902 8.95278 5.45054 9.00543 5.22955 8.99956C5.00862 8.99374 4.82676 8.93231 4.68396 8.81525L0.430914 5.36482C0.240529 5.21265 0.113041 5.03119 0.0484491 4.82045C-0.0161497 4.60974 -0.0161497 4.39903 0.0484491 4.18832C0.113041 3.9776 0.240529 3.79616 0.430914 3.64398L4.68396 0.202332C4.84034 0.0735655 5.0222 0.0062544 5.22955 0.000398642C5.43696 -0.00545112 5.61207 0.0530796 5.75487 0.17599C5.91125 0.298907 5.99282 0.454016 5.99957 0.641316C6.0064 0.828616 5.93162 0.986653 5.77524 1.11543L1.58341 4.50439L5.77524 7.9021C5.92479 8.02503 5.99957 8.18014 5.99957 8.36744C5.99957 8.55474 5.92138 8.71279 5.765 8.8416Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-nextfeature w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+                <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.505749 8.8416C0.641728 8.95278 0.820214 9.00543 1.04121 8.99956C1.26213 8.99374 1.44399 8.93231 1.58679 8.81525L5.83984 5.36482C6.03022 5.21265 6.15771 5.03119 6.2223 4.82045C6.2869 4.60974 6.2869 4.39903 6.2223 4.18832C6.15771 3.9776 6.03022 3.79616 5.83984 3.64398L1.58679 0.202332C1.43041 0.0735655 1.24855 0.0062544 1.04121 0.000398642C0.833791 -0.00545112 0.658681 0.0530796 0.515879 0.17599C0.359499 0.298907 0.277934 0.454016 0.27118 0.641316C0.264356 0.828616 0.339134 0.986653 0.495514 1.11543L4.68735 4.50439L0.495514 7.9021C0.345958 8.02503 0.27118 8.18014 0.27118 8.36744C0.27118 8.55474 0.349369 8.71279 0.505749 8.8416Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="flex justify-center lg:hidden swiper-pagination-feature pt-4"></div>
+          </div>
+        </div>
+
+        <!-- new -->
+        <div class="mt-14">
+          <div class="flex justify-between items-center">
+            <h2 class="font-semibold text-xl">New Releases</h2>
+            <button
+              class="group flex items-center gap-1 font-medium text-sm text-white bg-brand-blue rounded-lg py-1.5 px-5">
+              <span>View More</span>
+              <svg class="group-hover:translate-x-1 transition ease-linear" width="11" height="9" viewBox="0 0 11 9"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 4.49702C11 4.34672 10.9408 4.21423 10.8223 4.09953L6.89499 0.177982C6.83178 0.1147 6.76761 0.0692154 6.70246 0.0415292C6.63732 0.0138431 6.5692 0 6.49811 0C6.35201 0 6.22958 0.0484508 6.13083 0.145352C6.03211 0.242254 5.98276 0.363875 5.98276 0.510216C5.98276 0.581407 5.9946 0.649634 6.0183 0.714897C6.04199 0.780156 6.07754 0.836517 6.12495 0.88398L7.45182 2.23664L9.80342 4.3843L9.92189 4.08766L8.01453 3.969H0.52127C0.367258 3.969 0.241877 4.01844 0.145126 4.11732C0.0483755 4.2162 0 4.34277 0 4.49702C0 4.65127 0.0483755 4.77783 0.145126 4.87671C0.241877 4.97559 0.367258 5.02503 0.52127 5.02503H8.01453L9.92189 4.90638L9.80342 4.61568L7.45182 6.75737L6.12495 8.11005C6.07754 8.15752 6.04199 8.21388 6.0183 8.27913C5.9946 8.34441 5.98276 8.41264 5.98276 8.4838C5.98276 8.63017 6.03211 8.75179 6.13083 8.84867C6.22958 8.94559 6.35201 8.99405 6.49811 8.99405C6.64029 8.99405 6.76864 8.93866 6.88316 8.82789L10.8223 4.89451C10.9408 4.77981 11 4.64732 11 4.49702Z"
+                  fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+          <div class="relative">
+            <div class="swiper mySwipernew mt-8">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="group relative block w-full h-56 shadow-base">
+                    <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                    <div
+                      class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                    </div>
+                  </a>
+                  <a href="#"
+                    class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear my-2.5 py-1">
+                    The Newbie is Too Strong
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- navigation -->
+            <div class="absolute top-1/2 -translate-y-1/2 -left-8 -right-8 hidden lg:flex items-center justify-between">
+              <button
+                class="swiper-button-prevnew w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.765 8.8416C5.62902 8.95278 5.45054 9.00543 5.22955 8.99956C5.00862 8.99374 4.82676 8.93231 4.68396 8.81525L0.430914 5.36482C0.240529 5.21265 0.113041 5.03119 0.0484491 4.82045C-0.0161497 4.60974 -0.0161497 4.39903 0.0484491 4.18832C0.113041 3.9776 0.240529 3.79616 0.430914 3.64398L4.68396 0.202332C4.84034 0.0735655 5.0222 0.0062544 5.22955 0.000398642C5.43696 -0.00545112 5.61207 0.0530796 5.75487 0.17599C5.91125 0.298907 5.99282 0.454016 5.99957 0.641316C6.0064 0.828616 5.93162 0.986653 5.77524 1.11543L1.58341 4.50439L5.77524 7.9021C5.92479 8.02503 5.99957 8.18014 5.99957 8.36744C5.99957 8.55474 5.92138 8.71279 5.765 8.8416Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-nextnew w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+                <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.505749 8.8416C0.641728 8.95278 0.820214 9.00543 1.04121 8.99956C1.26213 8.99374 1.44399 8.93231 1.58679 8.81525L5.83984 5.36482C6.03022 5.21265 6.15771 5.03119 6.2223 4.82045C6.2869 4.60974 6.2869 4.39903 6.2223 4.18832C6.15771 3.9776 6.03022 3.79616 5.83984 3.64398L1.58679 0.202332C1.43041 0.0735655 1.24855 0.0062544 1.04121 0.000398642C0.833791 -0.00545112 0.658681 0.0530796 0.515879 0.17599C0.359499 0.298907 0.277934 0.454016 0.27118 0.641316C0.264356 0.828616 0.339134 0.986653 0.495514 1.11543L4.68735 4.50439L0.495514 7.9021C0.345958 8.02503 0.27118 8.18014 0.27118 8.36744C0.27118 8.55474 0.349369 8.71279 0.505749 8.8416Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="flex justify-center lg:hidden swiper-pagination-new pt-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popular stories -->
+      <div
+        class="hidden lg:block lg:w-2/5 xl:w-[30%] border border-brand-gray-100 dark:border-[#4A4A4A] dark:bg-[#4A4A4A]/50 rounded-lg overflow-hidden">
+        <h2
+          class="font-semibold text-sm bg-[#F6F9FF] dark:bg-[#4A4A4A]/50 border-b border-brand-gray-100 dark:border-[#4A4A4A] py-3 pl-4 mb-3">
+          Popular Series</h2>
+        <div class="grid grid-cols-3 text-xs font-medium gap-x-0.5 px-1">
+          <button class="text-xs text-white bg-brand-blue rounded-l-lg py-1.5">Weekly</button>
+          <button class="bg-brand-gray-100 dark:bg-[#4E4E4E] py-1.5">Monthly</button>
+          <button class="bg-brand-gray-100 dark:bg-[#4E4E4E] rounded-r-lg py-1.5">All</button>
+        </div>
+        <div class="text-xs py-5 px-3 space-y-2.5">
+          <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+            <div
+              class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+              <span class="font-semibold text-brand-blue dark:text-white">1</span>
+            </div>
+            <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+            </a>
+            <div class="ml-3">
+              <a href="#"
+                class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+                of the Suicidal Battle God</a>
+              <div class="text-brand-black dark:text-[#B5B5B5]">
+                <span class="block font-semibold">Genres</span>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+            <div
+              class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+              <span class="font-semibold text-brand-blue dark:text-white">2</span>
+            </div>
+            <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+            </a>
+            <div class="ml-3">
+              <a href="#"
+                class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+                of the Suicidal Battle God</a>
+              <div class="text-brand-black dark:text-[#B5B5B5]">
+                <span class="block font-semibold">Genres</span>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+            <div
+              class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+              <span class="font-semibold text-brand-blue dark:text-white">3</span>
+            </div>
+            <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+            </a>
+            <div class="ml-3">
+              <a href="#"
+                class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+                of the Suicidal Battle God</a>
+              <div class="text-brand-black dark:text-[#B5B5B5]">
+                <span class="block font-semibold">Genres</span>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+            <div
+              class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+              <span class="font-semibold text-brand-blue dark:text-white">4</span>
+            </div>
+            <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+            </a>
+            <div class="ml-3">
+              <a href="#"
+                class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+                of the Suicidal Battle God</a>
+              <div class="text-brand-black dark:text-[#B5B5B5]">
+                <span class="block font-semibold">Genres</span>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div
+              class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+              <span class="font-semibold text-brand-blue dark:text-white">5</span>
+            </div>
+            <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+              <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+            </a>
+            <div class="ml-3">
+              <a href="#"
+                class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+                of the Suicidal Battle God</a>
+              <div class="text-brand-black dark:text-[#B5B5B5]">
+                <span class="block font-semibold">Genres</span>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+                <a href="#"
+                  class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest Updates -->
+    <div class="max-w-base mx-auto px-4 lg:px-10 mb-16">
+      <div class="flex justify-between items-center space-x-2 mb-8">
+        <h2 class="font-semibold text-lg lg:text-xl">Latest Updates</h2>
+        <button
+          class="group flex items-center gap-1 font-medium text-sm text-white bg-brand-blue rounded-lg py-1.5 px-5">
+          <span class="whitespace-nowrap">View More</span>
+          <svg class="group-hover:translate-x-1 transition ease-linear" width="11" height="9" viewBox="0 0 11 9"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 4.49702C11 4.34672 10.9408 4.21423 10.8223 4.09953L6.89499 0.177982C6.83178 0.1147 6.76761 0.0692154 6.70246 0.0415292C6.63732 0.0138431 6.5692 0 6.49811 0C6.35201 0 6.22958 0.0484508 6.13083 0.145352C6.03211 0.242254 5.98276 0.363875 5.98276 0.510216C5.98276 0.581407 5.9946 0.649634 6.0183 0.714897C6.04199 0.780156 6.07754 0.836517 6.12495 0.88398L7.45182 2.23664L9.80342 4.3843L9.92189 4.08766L8.01453 3.969H0.52127C0.367258 3.969 0.241877 4.01844 0.145126 4.11732C0.0483755 4.2162 0 4.34277 0 4.49702C0 4.65127 0.0483755 4.77783 0.145126 4.87671C0.241877 4.97559 0.367258 5.02503 0.52127 5.02503H8.01453L9.92189 4.90638L9.80342 4.61568L7.45182 6.75737L6.12495 8.11005C6.07754 8.15752 6.04199 8.21388 6.0183 8.27913C5.9946 8.34441 5.98276 8.41264 5.98276 8.4838C5.98276 8.63017 6.03211 8.75179 6.13083 8.84867C6.22958 8.94559 6.35201 8.99405 6.49811 8.99405C6.64029 8.99405 6.76864 8.93866 6.88316 8.82789L10.8223 4.89451C10.9408 4.77981 11 4.64732 11 4.49702Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+      <div class="relative">
+        <div class="swiper mySwiperupdate">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- navigation -->
+        <div class="absolute top-1/2 -translate-y-1/2 -left-8 -right-8 hidden lg:flex items-center justify-between">
+          <button
+            class="swiper-button-prevupdate w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.765 8.8416C5.62902 8.95278 5.45054 9.00543 5.22955 8.99956C5.00862 8.99374 4.82676 8.93231 4.68396 8.81525L0.430914 5.36482C0.240529 5.21265 0.113041 5.03119 0.0484491 4.82045C-0.0161497 4.60974 -0.0161497 4.39903 0.0484491 4.18832C0.113041 3.9776 0.240529 3.79616 0.430914 3.64398L4.68396 0.202332C4.84034 0.0735655 5.0222 0.0062544 5.22955 0.000398642C5.43696 -0.00545112 5.61207 0.0530796 5.75487 0.17599C5.91125 0.298907 5.99282 0.454016 5.99957 0.641316C6.0064 0.828616 5.93162 0.986653 5.77524 1.11543L1.58341 4.50439L5.77524 7.9021C5.92479 8.02503 5.99957 8.18014 5.99957 8.36744C5.99957 8.55474 5.92138 8.71279 5.765 8.8416Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+          <button
+            class="swiper-button-nextupdate w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+            <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.505749 8.8416C0.641728 8.95278 0.820214 9.00543 1.04121 8.99956C1.26213 8.99374 1.44399 8.93231 1.58679 8.81525L5.83984 5.36482C6.03022 5.21265 6.15771 5.03119 6.2223 4.82045C6.2869 4.60974 6.2869 4.39903 6.2223 4.18832C6.15771 3.9776 6.03022 3.79616 5.83984 3.64398L1.58679 0.202332C1.43041 0.0735655 1.24855 0.0062544 1.04121 0.000398642C0.833791 -0.00545112 0.658681 0.0530796 0.515879 0.17599C0.359499 0.298907 0.277934 0.454016 0.27118 0.641316C0.264356 0.828616 0.339134 0.986653 0.495514 1.11543L4.68735 4.50439L0.495514 7.9021C0.345958 8.02503 0.27118 8.18014 0.27118 8.36744C0.27118 8.55474 0.349369 8.71279 0.505749 8.8416Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="flex justify-center lg:hidden swiper-pagination-latest pt-4"></div>
+      </div>
+    </div>
+
+    <!-- You Might Like This -->
+    <div class="max-w-base mx-auto space-y-5 px-4 lg:px-10 mb-16">
+      <div class="flex justify-between items-center space-x-2">
+        <h2 class="font-semibold text-lg lg:text-xl">You Might Like This</h2>
+        <button
+          class="group flex items-center gap-1 font-medium text-sm text-white bg-brand-blue rounded-lg py-1.5 px-5">
+          <span class="whitespace-nowrap">View More</span>
+          <svg class="group-hover:translate-x-1 transition ease-linear" width="11" height="9" viewBox="0 0 11 9"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 4.49702C11 4.34672 10.9408 4.21423 10.8223 4.09953L6.89499 0.177982C6.83178 0.1147 6.76761 0.0692154 6.70246 0.0415292C6.63732 0.0138431 6.5692 0 6.49811 0C6.35201 0 6.22958 0.0484508 6.13083 0.145352C6.03211 0.242254 5.98276 0.363875 5.98276 0.510216C5.98276 0.581407 5.9946 0.649634 6.0183 0.714897C6.04199 0.780156 6.07754 0.836517 6.12495 0.88398L7.45182 2.23664L9.80342 4.3843L9.92189 4.08766L8.01453 3.969H0.52127C0.367258 3.969 0.241877 4.01844 0.145126 4.11732C0.0483755 4.2162 0 4.34277 0 4.49702C0 4.65127 0.0483755 4.77783 0.145126 4.87671C0.241877 4.97559 0.367258 5.02503 0.52127 5.02503H8.01453L9.92189 4.90638L9.80342 4.61568L7.45182 6.75737L6.12495 8.11005C6.07754 8.15752 6.04199 8.21388 6.0183 8.27913C5.9946 8.34441 5.98276 8.41264 5.98276 8.4838C5.98276 8.63017 6.03211 8.75179 6.13083 8.84867C6.22958 8.94559 6.35201 8.99405 6.49811 8.99405C6.64029 8.99405 6.76864 8.93866 6.88316 8.82789L10.8223 4.89451C10.9408 4.77981 11 4.64732 11 4.49702Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <div class="max-w-full flex items-center font-medium text-sm gap-2 pb-2">
+          <button class="text-white bg-brand-blue rounded-lg whitespace-nowrap py-1.5 px-5">Commedy</button>
+          <button
+            class="bg-brand-gray-100 dark:bg-[#313133] dark:text-[#B5B5B5] rounded-lg whitespace-nowrap py-1.5 px-5">Sci-Fi</button>
+          <button
+            class="bg-brand-gray-100 dark:bg-[#313133] dark:text-[#B5B5B5] rounded-lg whitespace-nowrap py-1.5 px-5">Mystery</button>
+          <button
+            class="bg-brand-gray-100 dark:bg-[#313133] dark:text-[#B5B5B5] rounded-lg whitespace-nowrap py-1.5 px-5">Romance</button>
+          <button
+            class="bg-brand-gray-100 dark:bg-[#313133] dark:text-[#B5B5B5] rounded-lg whitespace-nowrap py-1.5 px-5">Drama</button>
+          <button
+            class="bg-brand-gray-100 dark:bg-[#313133] dark:text-[#B5B5B5] rounded-lg whitespace-nowrap py-1.5 px-5">Fantasy</button>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="swiper mySwiperlike">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- navigation -->
+        <div class="absolute top-1/2 -translate-y-1/2 -left-8 -right-8 hidden lg:flex items-center justify-between">
+          <button
+            class="swiper-button-prevlike w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.765 8.8416C5.62902 8.95278 5.45054 9.00543 5.22955 8.99956C5.00862 8.99374 4.82676 8.93231 4.68396 8.81525L0.430914 5.36482C0.240529 5.21265 0.113041 5.03119 0.0484491 4.82045C-0.0161497 4.60974 -0.0161497 4.39903 0.0484491 4.18832C0.113041 3.9776 0.240529 3.79616 0.430914 3.64398L4.68396 0.202332C4.84034 0.0735655 5.0222 0.0062544 5.22955 0.000398642C5.43696 -0.00545112 5.61207 0.0530796 5.75487 0.17599C5.91125 0.298907 5.99282 0.454016 5.99957 0.641316C6.0064 0.828616 5.93162 0.986653 5.77524 1.11543L1.58341 4.50439L5.77524 7.9021C5.92479 8.02503 5.99957 8.18014 5.99957 8.36744C5.99957 8.55474 5.92138 8.71279 5.765 8.8416Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+          <button
+            class="swiper-button-nextlike w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+            <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.505749 8.8416C0.641728 8.95278 0.820214 9.00543 1.04121 8.99956C1.26213 8.99374 1.44399 8.93231 1.58679 8.81525L5.83984 5.36482C6.03022 5.21265 6.15771 5.03119 6.2223 4.82045C6.2869 4.60974 6.2869 4.39903 6.2223 4.18832C6.15771 3.9776 6.03022 3.79616 5.83984 3.64398L1.58679 0.202332C1.43041 0.0735655 1.24855 0.0062544 1.04121 0.000398642C0.833791 -0.00545112 0.658681 0.0530796 0.515879 0.17599C0.359499 0.298907 0.277934 0.454016 0.27118 0.641316C0.264356 0.828616 0.339134 0.986653 0.495514 1.11543L4.68735 4.50439L0.495514 7.9021C0.345958 8.02503 0.27118 8.18014 0.27118 8.36744C0.27118 8.55474 0.349369 8.71279 0.505749 8.8416Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="flex justify-center lg:hidden swiper-pagination-like pt-4"></div>
+      </div>
+    </div>
+
+    <!-- If you’re looking for a binge... -->
+    <div class="max-w-base mx-auto px-4 lg:px-10 pb-16 lg:pb-48">
+      <div class="flex justify-between items-center space-x-2 mb-8">
+        <h2 class="font-semibold text-lg lg:text-xl">If you’re looking for a binge...</h2>
+        <button
+          class="group flex items-center gap-1 font-medium text-sm text-white bg-brand-blue rounded-lg py-1.5 px-5">
+          <span class="whitespace-nowrap">View More</span>
+          <svg class="group-hover:translate-x-1 transition ease-linear" width="11" height="9" viewBox="0 0 11 9"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 4.49702C11 4.34672 10.9408 4.21423 10.8223 4.09953L6.89499 0.177982C6.83178 0.1147 6.76761 0.0692154 6.70246 0.0415292C6.63732 0.0138431 6.5692 0 6.49811 0C6.35201 0 6.22958 0.0484508 6.13083 0.145352C6.03211 0.242254 5.98276 0.363875 5.98276 0.510216C5.98276 0.581407 5.9946 0.649634 6.0183 0.714897C6.04199 0.780156 6.07754 0.836517 6.12495 0.88398L7.45182 2.23664L9.80342 4.3843L9.92189 4.08766L8.01453 3.969H0.52127C0.367258 3.969 0.241877 4.01844 0.145126 4.11732C0.0483755 4.2162 0 4.34277 0 4.49702C0 4.65127 0.0483755 4.77783 0.145126 4.87671C0.241877 4.97559 0.367258 5.02503 0.52127 5.02503H8.01453L9.92189 4.90638L9.80342 4.61568L7.45182 6.75737L6.12495 8.11005C6.07754 8.15752 6.04199 8.21388 6.0183 8.27913C5.9946 8.34441 5.98276 8.41264 5.98276 8.4838C5.98276 8.63017 6.03211 8.75179 6.13083 8.84867C6.22958 8.94559 6.35201 8.99405 6.49811 8.99405C6.64029 8.99405 6.76864 8.93866 6.88316 8.82789L10.8223 4.89451C10.9408 4.77981 11 4.64732 11 4.49702Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+      <div class="relative">
+        <div class="swiper mySwiperBinge">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="group relative block w-full h-56 shadow-base">
+                <img class="relative z-0 w-full h-full object-cover rounded-lg" src="./image/feature.png" alt="">
+                <div
+                  class="absolute z-0 inset-0 w-full h-full rounded-lg bg-gradient-to-b from-black/60 to-black/0 opacity-0 lg:group-hover:opacity-100 transition-all ease-linear">
+                </div>
+              </a>
+              <div class="pt-3.5">
+                <a href="#"
+                  class="block font-semibold text-xs text-center underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1">
+                  The Newbie is Too Strong
+                </a>
+                <div class="flex items-center justify-between">
+                  <a href="#"
+                    class="block text-10 underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Chapter
+                    55</a>
+                  <span class="text-8 text-brand-gray-200">55 Mins ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- navigation -->
+        <div class="absolute top-1/2 -translate-y-1/2 -left-8 -right-8 hidden lg:flex items-center justify-between">
+          <button
+            class="swiper-button-prevBinge w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.765 8.8416C5.62902 8.95278 5.45054 9.00543 5.22955 8.99956C5.00862 8.99374 4.82676 8.93231 4.68396 8.81525L0.430914 5.36482C0.240529 5.21265 0.113041 5.03119 0.0484491 4.82045C-0.0161497 4.60974 -0.0161497 4.39903 0.0484491 4.18832C0.113041 3.9776 0.240529 3.79616 0.430914 3.64398L4.68396 0.202332C4.84034 0.0735655 5.0222 0.0062544 5.22955 0.000398642C5.43696 -0.00545112 5.61207 0.0530796 5.75487 0.17599C5.91125 0.298907 5.99282 0.454016 5.99957 0.641316C6.0064 0.828616 5.93162 0.986653 5.77524 1.11543L1.58341 4.50439L5.77524 7.9021C5.92479 8.02503 5.99957 8.18014 5.99957 8.36744C5.99957 8.55474 5.92138 8.71279 5.765 8.8416Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+          <button
+            class="swiper-button-nextBinge w-6 h-6 flex justify-center items-center text-white bg-brand-blue lg:hover:opacity-60 rounded-full transition ease-linear">
+            <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.505749 8.8416C0.641728 8.95278 0.820214 9.00543 1.04121 8.99956C1.26213 8.99374 1.44399 8.93231 1.58679 8.81525L5.83984 5.36482C6.03022 5.21265 6.15771 5.03119 6.2223 4.82045C6.2869 4.60974 6.2869 4.39903 6.2223 4.18832C6.15771 3.9776 6.03022 3.79616 5.83984 3.64398L1.58679 0.202332C1.43041 0.0735655 1.24855 0.0062544 1.04121 0.000398642C0.833791 -0.00545112 0.658681 0.0530796 0.515879 0.17599C0.359499 0.298907 0.277934 0.454016 0.27118 0.641316C0.264356 0.828616 0.339134 0.986653 0.495514 1.11543L4.68735 4.50439L0.495514 7.9021C0.345958 8.02503 0.27118 8.18014 0.27118 8.36744C0.27118 8.55474 0.349369 8.71279 0.505749 8.8416Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="flex justify-center lg:hidden swiper-pagination-binge pt-4"></div>
+      </div>
+    </div>
+
+    <!-- popular stories -->
+    <div
+      class="lg:hidden border border-brand-gray-100 dark:border-[#4A4A4A] dark:bg-[#4A4A4A]/50 rounded-lg overflow-hidden mb-20 mx-4">
+      <h2
+        class="font-semibold text-sm bg-[#F6F9FF] dark:bg-[#4A4A4A]/50 border-b border-brand-gray-100 dark:border-[#4A4A4A] py-3 pl-4 mb-3">
+        Popular Series</h2>
+      <div class="grid grid-cols-3 text-xs font-medium gap-x-0.5 px-1">
+        <button class="text-xs text-white bg-brand-blue rounded-l-lg py-1.5">Weekly</button>
+        <button class="bg-brand-gray-100 dark:bg-[#4E4E4E] py-1.5">Monthly</button>
+        <button class="bg-brand-gray-100 dark:bg-[#4E4E4E] rounded-r-lg py-1.5">All</button>
+      </div>
+      <div class="text-xs py-5 px-3 space-y-2.5">
+        <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+          <div
+            class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+            <span class="font-semibold text-brand-blue dark:text-white">1</span>
+          </div>
+          <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+          </a>
+          <div class="ml-3">
+            <a href="#"
+              class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+              of the Suicidal Battle God</a>
+            <div class="text-brand-black dark:text-[#B5B5B5]">
+              <span class="block font-semibold">Genres</span>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+          <div
+            class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+            <span class="font-semibold text-brand-blue dark:text-white">2</span>
+          </div>
+          <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+          </a>
+          <div class="ml-3">
+            <a href="#"
+              class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+              of the Suicidal Battle God</a>
+            <div class="text-brand-black dark:text-[#B5B5B5]">
+              <span class="block font-semibold">Genres</span>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+          <div
+            class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+            <span class="font-semibold text-brand-blue dark:text-white">3</span>
+          </div>
+          <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+          </a>
+          <div class="ml-3">
+            <a href="#"
+              class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+              of the Suicidal Battle God</a>
+            <div class="text-brand-black dark:text-[#B5B5B5]">
+              <span class="block font-semibold">Genres</span>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center border-b border-brand-gray-100 dark:border-[#4A4A4A] pb-2">
+          <div
+            class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+            <span class="font-semibold text-brand-blue dark:text-white">4</span>
+          </div>
+          <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+          </a>
+          <div class="ml-3">
+            <a href="#"
+              class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+              of the Suicidal Battle God</a>
+            <div class="text-brand-black dark:text-[#B5B5B5]">
+              <span class="block font-semibold">Genres</span>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div
+            class="w-8 h-8 flex flex-shrink-0 justify-center items-center rounded-lg border border-brand-blue dark:border-transparent dark:bg-black mr-2">
+            <span class="font-semibold text-brand-blue dark:text-white">5</span>
+          </div>
+          <a href="#" class="block w-xs shrink-0 h-xl rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/popular.png" alt="">
+          </a>
+          <div class="ml-3">
+            <a href="#"
+              class="block font-semibold underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear mb-1.5">Reincarnation
+              of the Suicidal Battle God</a>
+            <div class="text-brand-black dark:text-[#B5B5B5]">
+              <span class="block font-semibold">Genres</span>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Sci-Fi</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Fantasy</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Action</a>
+              <a href="#"
+                class="underline decoration-transparent hover:decoration-black dark:hover:decoration-white transition ease-linear">Drama</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-brand-blue">
+    <div class="max-w-base mx-auto text-white py-8 px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-10">
+        <div class="flex flex-col items-center md:items-start space-y-5">
+          <a href="#">
+            <img class="w-40 h-11" src="./image/logo.svg" alt="">
+          </a>
+          <p class="max-w-lg text-sm text-center md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam massa tortor, tempus vel efficitur nec,
+            interdum id justo. In hac habitasse platea dictumst. In vestibulum urna a dapibus ullamcorper
+          </p>
+        </div>
+
+        <div class="flex items-start text-sm gap-20">
+          <div class="space-y-2">
+            <p class="text-base font-semibold whitespace-nowrap pb-1">Quick Links</p>
+            <a href="#"
+              class="block underline underline-offset-2 decoration-transparent lg:hover:decoration-white transition ease-linear">
+              Home
+            </a>
+            <a href="#"
+              class="block underline underline-offset-2 decoration-transparent lg:hover:decoration-white transition ease-linear">
+              Dashboard
+            </a>
+            <a href="#"
+              class="block underline underline-offset-2 decoration-transparent lg:hover:decoration-white transition ease-linear">
+              Discover
+            </a>
+          </div>
+          <div class="space-y-2">
+            <p class="text-base font-semibold whitespace-nowrap pb-1">Policy</p>
+            <a href="#"
+              class="block underline underline-offset-2 decoration-transparent lg:hover:decoration-white transition ease-linear">
+              Privacy Policy
+            </a>
+            <a href="#"
+              class="block underline underline-offset-2 decoration-transparent lg:hover:decoration-white transition ease-linear">
+              Content policy
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-sm text-center md:text-left pt-5">Asurascans © 2022. All rights reserved</p>
+
+      <!-- socials -->
+      <div class="flex md:hidden items-center justify-center space-x-7 pt-4 pb-8">
+        <!-- twitter -->
+        <a href="#">
+          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_43_1998)">
+              <path
+                d="M13.6611 3.57038C13.1531 3.79322 12.6118 3.94093 12.0474 4.01265C12.628 3.666 13.0711 3.12127 13.2795 2.46468C12.7381 2.78742 12.1405 3.01539 11.5035 3.14261C10.9895 2.59531 10.2569 2.25635 9.45776 2.25635C7.90722 2.25635 6.65894 3.51488 6.65894 5.05773C6.65894 5.27972 6.67772 5.49318 6.72383 5.69638C4.39546 5.58283 2.3352 4.46689 0.951155 2.76693C0.709524 3.18616 0.56779 3.666 0.56779 4.18256C0.56779 5.1525 1.06727 6.0123 1.8118 6.51007C1.36184 6.50154 0.920417 6.3709 0.546444 6.16513C0.546444 6.17367 0.546444 6.18477 0.546444 6.19587C0.546444 7.55686 1.51724 8.68731 2.79028 8.94773C2.56231 9.01006 2.31385 9.03994 2.056 9.03994C1.87669 9.03994 1.69568 9.0297 1.52577 8.99213C1.88865 10.1012 2.91835 10.9166 4.14273 10.9431C3.18987 11.6885 1.98001 12.1376 0.670248 12.1376C0.440571 12.1376 0.220285 12.1274 0 12.0992C1.2406 12.8992 2.71088 13.356 4.29642 13.356C9.45007 13.356 12.2677 9.0869 12.2677 5.38645C12.2677 5.26265 12.2634 5.14311 12.2574 5.02443C12.8133 4.62997 13.2803 4.13731 13.6611 3.57038Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_43_1998">
+                <rect width="13.6611" height="13.6611" fill="white" transform="translate(0 0.975586)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <!-- facebook -->
+        <a href="#">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_43_1984)">
+              <path
+                d="M9.71325 3.2439H10.9604V1.07178C10.7452 1.04218 10.0053 0.975586 9.14347 0.975586C7.34533 0.975586 6.11355 2.10661 6.11355 4.18538V6.0985H4.12927V8.52676H6.11355V14.6367H8.54636V8.52733H10.4504L10.7526 6.09907H8.5458V4.42615C8.54636 3.72431 8.73534 3.2439 9.71325 3.2439Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_43_1984">
+                <rect width="13.6611" height="13.6611" fill="white" transform="translate(0.607422 0.975586)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <!-- instagram -->
+        <a href="#">
+          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_43_1986)">
+              <path
+                d="M13.8636 4.99199C13.8316 4.26612 13.7142 3.76709 13.5461 3.33468C13.3726 2.87568 13.1057 2.46474 12.7561 2.12313C12.4145 1.7762 12.0008 1.50662 11.5471 1.33586C11.1122 1.16771 10.6158 1.05033 9.88994 1.01833C9.15865 0.983613 8.9265 0.975586 7.07175 0.975586C5.217 0.975586 4.98484 0.983613 4.25627 1.01562C3.5304 1.04762 3.03137 1.16511 2.59906 1.33315C2.13996 1.50662 1.72903 1.77349 1.38741 2.12313C1.04048 2.46474 0.771003 2.87839 0.600143 3.33207C0.431994 3.76709 0.314613 4.26341 0.282609 4.98928C0.247895 5.72057 0.239868 5.95272 0.239868 7.80747C0.239868 9.66222 0.247895 9.89438 0.279899 10.623C0.311902 11.3488 0.429388 11.8479 0.597537 12.2803C0.771003 12.7393 1.04048 13.1502 1.38741 13.4918C1.72903 13.8387 2.14267 14.1083 2.59635 14.2791C3.03137 14.4472 3.52769 14.5646 4.25366 14.5966C4.98213 14.6287 5.21439 14.6367 7.06914 14.6367C8.92389 14.6367 9.15605 14.6287 9.88462 14.5966C10.6105 14.5646 11.1095 14.4472 11.5418 14.2791C12.4599 13.9241 13.1858 13.1983 13.5407 12.2803C13.7088 11.8452 13.8263 11.3488 13.8583 10.623C13.8903 9.89438 13.8983 9.66222 13.8983 7.80747C13.8983 5.95272 13.8956 5.72057 13.8636 4.99199ZM12.6334 10.5696C12.604 11.2368 12.4919 11.597 12.3985 11.8372C12.169 12.4324 11.6966 12.9047 11.1015 13.1343C10.8613 13.2277 10.4984 13.3397 9.83385 13.369C9.11331 13.4011 8.8972 13.409 7.07446 13.409C5.25171 13.409 5.0329 13.4011 4.31496 13.369C3.64778 13.3397 3.28751 13.2277 3.04732 13.1343C2.75116 13.0248 2.48158 12.8513 2.26277 12.6245C2.03593 12.403 1.86246 12.1361 1.753 11.8399C1.6596 11.5997 1.54753 11.2368 1.51824 10.5723C1.48613 9.85174 1.47821 9.63554 1.47821 7.81279C1.47821 5.99004 1.48613 5.77123 1.51824 5.05339C1.54753 4.38621 1.6596 4.02594 1.753 3.78575C1.86246 3.48949 2.03593 3.22001 2.26548 3.00109C2.4869 2.77425 2.75377 2.60079 3.05003 2.49143C3.29022 2.39803 3.6532 2.28596 4.31767 2.25656C5.03822 2.22456 5.25442 2.21653 7.07706 2.21653C8.90252 2.21653 9.11862 2.22456 9.83657 2.25656C10.5037 2.28596 10.864 2.39803 11.1042 2.49143C11.4004 2.60079 11.6699 2.77425 11.8888 3.00109C12.1156 3.22262 12.2891 3.48949 12.3985 3.78575C12.4919 4.02594 12.604 4.38882 12.6334 5.05339C12.6654 5.77394 12.6734 5.99004 12.6734 7.81279C12.6734 9.63554 12.6654 9.84903 12.6334 10.5696Z"
+                fill="white" />
+              <path
+                d="M7.07203 4.29761C5.13461 4.29761 3.56268 5.86943 3.56268 7.80696C3.56268 9.74448 5.13461 11.3163 7.07203 11.3163C9.00955 11.3163 10.5814 9.74448 10.5814 7.80696C10.5814 5.86943 9.00955 4.29761 7.07203 4.29761ZM7.07203 10.0834C5.81513 10.0834 4.7956 9.06396 4.7956 7.80696C4.7956 6.54995 5.81513 5.53053 7.07203 5.53053C8.32903 5.53053 9.34846 6.54995 9.34846 7.80696C9.34846 9.06396 8.32903 10.0834 7.07203 10.0834Z"
+                fill="white" />
+              <path
+                d="M11.5388 4.15936C11.5388 4.61179 11.172 4.97864 10.7194 4.97864C10.267 4.97864 9.90015 4.61179 9.90015 4.15936C9.90015 3.70683 10.267 3.34009 10.7194 3.34009C11.172 3.34009 11.5388 3.70683 11.5388 4.15936Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_43_1986">
+                <rect width="13.6611" height="13.6611" fill="white" transform="translate(0.21582 0.975586)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <!-- linkedin -->
+        <a href="#">
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.30624 5.51411C8.54178 5.30005 8.76451 5.06441 9.02033 4.8728C9.44506 4.55449 9.94955 4.43156 10.4688 4.38345C11.1826 4.3173 11.8877 4.35489 12.5536 4.65709C13.2491 4.9726 13.691 5.52199 13.9688 6.21871C14.22 6.8487 14.324 7.51052 14.3341 8.18067C14.3589 9.82238 14.3596 11.4645 14.3663 13.1067C14.3678 13.479 14.1801 13.6596 13.8101 13.6601C13.1736 13.6609 12.5372 13.6613 11.9007 13.6599C11.5517 13.6591 11.3804 13.4868 11.3803 13.1357C11.3796 11.7265 11.3883 10.3171 11.3745 8.90795C11.3713 8.57696 11.3234 8.23946 11.2443 7.91772C11.0886 7.28544 10.6604 6.93222 10.0496 6.8787C9.39788 6.82157 8.87568 7.11834 8.59599 7.70109C8.40124 8.10675 8.30544 8.53314 8.30584 8.98313C8.3071 10.3583 8.30647 11.7335 8.30618 13.1087C8.30613 13.4843 8.13138 13.6596 7.75577 13.66C7.14771 13.6608 6.53971 13.661 5.93165 13.66C5.56941 13.6594 5.38438 13.4768 5.38426 13.1176C5.38369 10.424 5.38375 7.73046 5.38421 5.03687C5.38426 4.6712 5.5601 4.49776 5.92725 4.49759C6.55234 4.49725 7.17742 4.49691 7.8025 4.49777C8.12601 4.49822 8.30419 4.67812 8.30601 5.00402C8.3071 5.18003 8.30624 5.35604 8.30624 5.51411Z"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.14344 9.08391C4.14349 10.4017 4.14378 11.7195 4.14332 13.0371C4.14321 13.479 3.96366 13.6596 3.52584 13.6598C2.94646 13.6602 2.36714 13.6609 1.78776 13.6596C1.40792 13.6587 1.22289 13.4737 1.22289 13.0962C1.22266 10.4152 1.22266 7.73423 1.22289 5.05327C1.22289 4.67869 1.40141 4.49771 1.77085 4.49731C2.37862 4.49674 2.98639 4.49657 3.59416 4.49737C3.95201 4.49788 4.14224 4.69086 4.14275 5.06241C4.14441 6.40295 4.14338 7.74337 4.14344 9.08391Z"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.55741 1.88757C4.55643 2.91608 3.7121 3.77407 2.6829 3.76544C1.64571 3.7567 0.805032 2.95984 0.79892 1.87826C0.792979 0.843405 1.64988 0.000556198 2.67479 -0.000243577C3.71004 -0.00104335 4.55832 0.849574 4.55741 1.88757Z"
+              fill="white" />
+          </svg>
+        </a>
+        <!-- youtube -->
+        <a href="#">
+          <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.01544 3.92532V3.92488C1.02415 3.69974 1.02705 3.4733 1.08116 3.24958C1.13874 3.01288 1.22106 2.78206 1.37809 2.56723C1.5904 2.27645 1.88106 2.03082 2.25007 1.83031C2.51432 1.68631 2.80301 1.57195 3.12258 1.49983C3.5885 1.3948 4.06922 1.35456 4.55696 1.35257C4.86127 1.35124 5.1654 1.34592 5.46982 1.34681C7.68052 1.3533 9.89128 1.33566 12.1021 1.35635C12.3954 1.35911 12.684 1.38413 12.9719 1.42093C13.5238 1.49151 14.0115 1.65621 14.4287 1.91619C14.915 2.21926 15.2431 2.59023 15.3913 3.03791C15.4882 3.33055 15.5124 3.62741 15.5165 3.92536V3.98479C15.5165 4.00783 15.504 9.047 15.5028 9.11361C15.4996 9.29656 15.4803 9.47817 15.4313 9.6582C15.3715 9.87758 15.2872 10.0914 15.1369 10.2898C14.9781 10.4995 14.7793 10.688 14.5332 10.8528C14.1565 11.1053 13.7217 11.2837 13.2154 11.3782C12.7583 11.4634 12.292 11.4824 11.8222 11.482C11.8207 11.4835 11.8198 11.4852 11.8196 11.4871H4.70981C4.70981 11.4854 4.70981 11.4837 4.70941 11.482C4.44278 11.4786 4.1758 11.48 3.91057 11.457C3.62002 11.4318 3.3322 11.3938 3.05721 11.3228C2.62404 11.2108 2.24763 11.0365 1.92615 10.8036C1.56188 10.5399 1.305 10.2348 1.16893 9.87953C1.04731 9.56259 1.02084 9.23937 1.0202 8.91383"
+              fill="#292929" />
+            <path
+              d="M8.61515 0.965327L5.37742 1.02459C4.32911 1.04524 3.27819 1.00402 2.25044 1.21797C0.686995 1.53763 0.576235 3.105 0.460336 4.41972C0.30064 6.26805 0.362463 8.14993 0.663831 9.98284C0.833964 11.0113 1.5035 11.625 2.53892 11.6918C6.03423 11.9341 9.55278 11.9054 13.0403 11.7923C13.4087 11.782 13.7795 11.7253 14.1427 11.6608C15.9355 11.3463 15.9792 9.57013 16.0954 8.07492C16.2113 6.56429 16.1624 5.0459 15.9409 3.54556C15.7632 2.30331 15.4231 1.26157 13.9882 1.161C12.1902 1.0295 10.4336 0.923629 8.63057 0.957335C8.63065 0.965327 8.62029 0.965327 8.61515 0.965327ZM6.71168 4.11034C8.06657 4.88892 9.39561 5.65452 10.7428 6.42788C9.38533 7.20646 8.05882 7.97206 6.71168 8.74542V4.11034Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/flowbite.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
